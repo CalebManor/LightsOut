@@ -1,0 +1,18 @@
+﻿<Window x:Class="LightsOut.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LightsOut"
+        mc:Ignorable="d"
+        Title="About Lights Out" Height="190.609" Width="399.624" ResizeMode="NoResize"
+        Icon="bulb.png">
+    <Canvas>
+        <Image x:Name="image" Height="60" Width="65" Canvas.Left="23" Canvas.Top="58" Source="bulb.png"/>
+        <Label x:Name="gameLabel" Content="Lights Out!" Canvas.Left="23" Canvas.Top="27" RenderTransformOrigin="0.144,-0.418"/>
+        <Label x:Name="authorLabel" Content="By Caleb Manor" Canvas.Left="13" Canvas.Top="123" RenderTransformOrigin="1.173,1.555"/>
+        <Button x:Name="okButton" Click="okButton_Click" Content="OK" Width="75" Canvas.Left="221" Canvas.Top="126"/>
+        <Label x:Name="aboutLabel" Content="Turn all the lights off (black) to win the game!" Canvas.Left="132" Canvas.Top="58"/>
+
+    </Canvas>
+</Window>

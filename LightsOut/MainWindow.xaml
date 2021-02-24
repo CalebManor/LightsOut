@@ -1,0 +1,24 @@
+﻿<Window x:Class="LightsOut.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LightsOut"
+        mc:Ignorable="d"
+        Title="Lights Out!" Height="420.487" Width="387.402"
+        Icon="bulb.png">
+    <Grid>
+        <Canvas Name ="boardCanvas" Width="200" Height="200"></Canvas>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="19" Margin="0,10,-0.4,0" VerticalAlignment="Top" Width="794" RenderTransformOrigin="-2.431,0.648">
+            <MenuItem Header="Game">
+                <MenuItem Header="_New" Click="MenuNew_Click" ToolTip="Starts a new game" />
+                <Separator />
+                <MenuItem Header="E_xit" Click="MenuExit_Click" ToolTip="Exits the application"/>
+            </MenuItem>
+            <MenuItem Header="Help" Click="MenuHelp_Click"></MenuItem>
+        </Menu>
+        
+        <Button x:Name="newGameButton" Click="MenuNew_Click" Content="New Game" HorizontalAlignment="Left" Margin="50,334,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="-0.648,2.028"/>
+        <Button x:Name="exitButton" Click="MenuExit_Click" Content="Exit" HorizontalAlignment="Left" Margin="244,334,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>
